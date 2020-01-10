@@ -18,7 +18,6 @@ public class Flows {
             System.out.println("0. Koniec");
 
             String userInput = scanner.nextLine();
-
             switch (userInput) {
                 case "1":
                     TransactionAdd.main(new String[0]);
@@ -35,7 +34,7 @@ public class Flows {
                 case "0":
                     return;
                 default:
-                    System.out.println("Nie ma takiej opcji!");
+                    System.out.println("Nie ma takiej opcji");
             }
         }
     }

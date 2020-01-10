@@ -4,14 +4,24 @@ public class Transaction {
     private double date;
     private String description;
     private int amount;
-    private Boolean type;
+    private String type;
 
-    public Transaction(int id, double date, String description, int amount, Boolean type) {
+    public Transaction(int id, double date, String description, int amount, String type) {
         this.id = id;
         this.date = date;
         this.description = description;
         this.amount = amount;
         this.type = type;
+    }
+
+    public Transaction(double date, String description, int amount, String type) {
+        this.id = id;
+        this.date = date;
+        this.description = description;
+        this.amount = amount;
+        this.type = type;
+
+
 }
 
     public Transaction(double date, String description, int amount, Boolean type) {
@@ -49,11 +59,11 @@ public class Transaction {
         this.amount = amount;
     }
 
-    public Boolean getType() {
+    public String getType() {
         return type;
     }
 
-    public void setType(Boolean type) {
+    public void setType(String type) {
         this.type = type;
     }
 }

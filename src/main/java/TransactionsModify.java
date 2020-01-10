@@ -21,12 +21,11 @@ public class TransactionsModify {
         int amount = scanner.nextInt();
 
         System.out.println("Podaj typ");
-        Boolean type= scanner.nextBoolean();
+        String type= scanner.nextLine();
         scanner.nextLine();;
-
         Transaction transaction = new Transaction(id,date,description,amount,type);
 
-       TransactionDao transactionDao = new TransactionDao();
+        TransactionDao transactionDao = new TransactionDao();
        transactionDao.modify(transaction);
 
     }
